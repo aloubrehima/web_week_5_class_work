@@ -120,13 +120,13 @@
         // add an error message to the errors array. (Hint: use push to add to the end of the array)
         // Add one error message for each problem with the form. 
 
-        if (!homeownerName) {
+        if (!name) {
             errors.push('Homeowner name is required.')
         } 
-        if (!homeownerHouseNumber) {
+        if (!houseNumber) {
             errors.push('House number is required')
         }
-        if (!homeownerStreetName) {
+        if (!streetName) {
             errors.push('Home owner street is required')
         }
         if (!city) {
@@ -152,12 +152,12 @@
         // summary in the order summary paragraph.
 
         orderSummaryParagraph.innerHTML= `
-            Homeowner Name: ${homeownerName}
-            House Number: ${homeownerHouseNumber}
-            Street Name: ${homeownerStreetName}
+            Homeowner Name: ${name}
+            House Number: ${houseNumber}
+            Street Name: ${streetName}
             City: ${city}
             State: Minnesota
-            Zip Code: ${zipCode}
+            Zip Code: ${zipcode}
             Tree Type: ${treeType} `
     })
 
